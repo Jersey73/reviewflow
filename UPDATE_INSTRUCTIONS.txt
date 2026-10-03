@@ -1,0 +1,5 @@
+ReviewFlow v18 production build fixes
+
+1. ESLint flat config now imports eslint-config-next/core-web-vitals.js explicitly.
+2. /admin and /admin/qr are explicitly force-dynamic so Supabase Auth/server configuration is evaluated at request time rather than during build prerendering.
+3. All v17 functionality remains unchanged.
